@@ -1,0 +1,146 @@
+/*Mobile First:*/
+/*Index*/
+
+html, body {
+  background-color: black;
+}
+
+header {
+  position: fixed;
+}
+
+h1 {
+  font-size: 8vw;
+  color: white;
+  text-shadow: 2px 2px 2px cyan, -2px -2px 2px orange;
+}
+
+header > nav {
+  position: fixed;
+  transform: translate(-50%, -50%); /* Ajusta el centro del bloque al punto indicado */
+  left: 50vw; /* Posición horizontal deseada */
+  top: 80vh; /* Posición vertical deseada */
+  display: flex; /* Flexbox para manejar la disposición */
+  flex-wrap: wrap; /* Permite que los enlaces se envuelvan en una nueva línea si no caben */
+  justify-content: center; /* Centra los enlaces horizontalmente */
+  align-content: space-between; /* Ajusta la separación vertical entre líneas si se envuelven */
+  text-align: center;
+}
+
+header > nav > a {
+  font-size: 4vh;
+  line-height: 1; /* Aumenta el espacio entre líneas al 1.5 del tamaño de la fuente */
+  display: inline-block;
+  margin: 2vh 5vw;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px cyan, -2px -2px 2px orange;
+}
+
+main {
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  width: 100vw;
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 0fr 1fr 0fr; /* Una columna: las laterales no se muestran */
+}
+  
+.imagenesIndex {
+  display: block; /* Flexbox dentro de cada celda */
+  height: 100%; /* Mantiene la proporción original */
+  width: 100%; /* O cualquier tamaño deseado */
+  background-size: contain; /* Ajusta la imagen dentro del contenedor manteniendo las proporciones */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+footer {
+  background-color: black;
+  z-index: 1;
+  position: absolute;
+  top: 100vh;
+  color: white;
+  width: 100vw;
+}
+
+footer > * {
+  width: 100vw;
+}
+
+#imagenIzquierda {
+  background-image: url("../../assets/images/fondoIzquierda_index-pequena.png");
+  background-position: center right; /* Centra la imagen en ambos ejes */
+}
+#imagenCentro {
+  background-image: url("../../assets/images/fondoCentro_index-pequena.png");
+}
+#imagenDerecha {
+  background-image: url("../../assets/images/fondoDerecha_index-pequena.png");
+  background-position: center left; /* Centra la imagen en ambos ejes */
+}
+
+@media screen and (orientation: landscape) {
+  
+  main {
+    grid-template-columns: 2fr 3fr 2fr; /* Tres columnas de proporciones diferentes */
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  header > nav > a {
+    font-size: 2vw;    
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+  #imagenIzquierda {
+    background-image: url("../../assets/images/fondoIzquierda_index-mediana.png");
+    background-position: center right; /* Centra la imagen en ambos ejes */
+  }
+
+  #imagenCentro {
+    background-image: url("../../assets/images/fondoCentro_index-mediana.png");
+  }
+
+  #imagenDerecha {
+    background-image: url("../../assets/images/fondoDerecha_index-mediana.png");
+    background-position: center left; /* Centra la imagen en ambos ejes */
+  }
+}
+@media screen and (min-width: 1025px) {
+
+  #imagenIzquierda {
+    background-image: url("../../assets/images/fondoIzquierda_index-grande.png");
+    background-position: center right; /* Centra la imagen en ambos ejes */
+  }
+
+  #imagenCentro {
+    background-image: url("../../assets/images/fondoCentro_index-grande.png");
+  }
+
+  #imagenDerecha {
+    background-image: url("../../assets/images/fondoDerecha_index-grande.png");
+    background-position: center left; /* Centra la imagen en ambos ejes */
+  }
+}
+@media screen and (min-width: 1441px) {
+
+  #imagenIzquierda {
+    background-image: url("../../assets/images/fondoIzquierda_index-enorme.png");
+    background-position: center right; /* Centra la imagen en ambos ejes */
+  }
+
+  #imagenCentro {
+    background-image: url("../../assets/images/fondoCentro_index-enorme.png");
+  }
+  
+  #imagenDerecha {
+    background-image: url("../../assets/images/fondoDerecha_index-enorme.png");
+    background-position: center left; /* Centra la imagen en ambos ejes */
+  }
+}

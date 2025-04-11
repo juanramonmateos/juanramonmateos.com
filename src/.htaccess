@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirección de HTTP a HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Redirección si la dirección no existe
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([^/]+)$ /error.html [L]
+
+  # Reescritura para URLs sin la extensión .html
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([^/]+)$ $1.html [L]
+</IfModule>

@@ -1,0 +1,53 @@
+img#logo_vertical {
+    display: none;
+}
+
+section article {
+    width: 100%;
+}
+
+article p {
+    padding: 0% 7.5%;
+  	padding-bottom: 20px;
+}
+
+table {
+    display: none;
+}
+
+#texto_info {
+    text-align: center;
+    display: block;
+    color: black;
+}
+
+header#bienvenido nav {
+    display: flex;
+    justify-content: space-around; /* Ajusta el espacio entre los elementos */
+    width: 100vw;
+}
+
+#menu_superior a {
+    word-break:break-all;
+}
+
+nav#menu_superior {
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    
+}
+
+section#formulario article{
+    width:100vw;
+}
+
+#soundCloud_previous_works {
+	margin: 0% 0%;
+  	width: 100%;
+}
+
+section#trabajos_anteriores {
+  	min-height: calc(100vh - 80px);
+}

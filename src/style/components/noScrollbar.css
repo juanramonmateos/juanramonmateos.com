@@ -1,0 +1,7 @@
+html, body {
+    scrollbar-width: none; /* Oculta barras de desplazamiento en Firefox */
+  }
+    
+  html::-webkit-scrollbar {
+    display: none; /* Oculta barras de desplazamiento en Chrome, Edge y Safari */
+  }
