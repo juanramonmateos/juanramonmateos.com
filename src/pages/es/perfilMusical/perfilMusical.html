@@ -9,16 +9,16 @@
       <meta name="keywords" content="musician, programmer, personal, site, page">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <!-- Estilos css comunes en todas las páginas, con el siguiente orden de aplicación (con herencia): -->
-      <!-- 1º Todo tipo de pantallas-->
-      <link href="./style/old/desktop.css" rel="stylesheet" type="text/css">
-      <!-- 2º Pantallas que como máximo midan 991 píxeles-->
-      <link href="./style/old/tablet.css" rel="stylesheet" type="text/css" media="(max-width:991px)">
-      <!-- 3º Pantallas que como máximo midan 767 píxeles-->
-      <link href="./style/old/phone.css" rel="stylesheet" type="text/css" media="(max-width:767px)">
+        <!--INCLUSIÓN DE ESTILOS-->
+        <!--Estilos para resetear las configuraciones de los navegadores-->
+        <link href="../../../style/base/reset.css" rel="stylesheet" type="text/css">
+        <!--Estilos para aplicar a toda la pagina. Mobile first-->
+        <link href="../../../style/pages/musicalProfile.css" rel="stylesheet" type="text/css">
+        <!--Estilos para incluir las fuentes de texto en archivos .tiff-->
+        <link href="../../../style/base/typography.css" rel="stylesheet" type="text/css">
     
       <!-- Imagen Favicon-->
-      <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
     
       <title>
         Bienvenido | Juan Ramón Mateos
@@ -28,14 +28,14 @@
     <body>
     
     <video id="videoFondo" preload="auto" playsinline="" muted="" loop=""
-      src="./assets/videos/fondo.mp4" autoplay=""></video>
+      src="../../../assets/videos/fondo.mp4" autoplay=""></video>
 
     <button id="botonForzarPlay">Press if video is not playing</button>
     
       <header id="bienvenido">
-        <a href="./index.html">
-          <img id="logo_header" src="./assets/images/logo_header.png" alt="Juan Ramón Mateos">
-          <img id="logo_vertical" src="./assets/images/logo_rectangular.png" alt="Juan Ramón Mateos">
+        <a href="../../index.html">
+          <img id="logo_header" src="../../../assets/images/logo_header.png" alt="Juan Ramón Mateos">
+          <img id="logo_vertical" src="../../../assets/images/logo_rectangular.png" alt="Juan Ramón Mateos">
         </a>
         <nav id="menu_superior">
           <a href="./musica.html">Música</a>
@@ -56,7 +56,7 @@
               y artista visual nacido en la ciudad andaluza de Córdoba, España.
             </p>
             <figure class="foto_perfil">
-              <img src="./assets/images/perfil.jpg" alt="Juan Ramón en su estudio">
+              <img src="../../../assets/images/perfil.jpg" alt="Juan Ramón en su estudio">
               <figcaption>Juan Ramón en su estudio en 2021</figcaption>
             </figure>
             <p>
@@ -100,7 +100,7 @@
           </article>
         </section>
         <section class="imagen">
-          <img src="./assets/images/playing.jpg">
+          <img src="../../../assets/images/playing.jpg">
         </section>
         <section id="metodo">
           <article>
@@ -110,7 +110,7 @@
               en la producción musical.
             </p>
             <figure class="foto_perfil">
-              <img src="./assets/images/profile.jpg" alt="Juan Ramón en 2022">
+              <img src="../../../assets/images/profile.jpg" alt="Juan Ramón en 2022">
               <figcaption>Juan Ramón en 2022</figcaption>
             </figure>
             <p>
@@ -142,7 +142,7 @@
           </article>
         </section>
         <section class="imagen">
-          <img src="./assets/images/landscape.jpg">
+          <img src="../../../assets/images/landscape.jpg">
         </section>
       </main>
       <footer>

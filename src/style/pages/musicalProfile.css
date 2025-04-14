@@ -1,0 +1,563 @@
+/* Estilos base - Mobile First */
+img#logo_vertical {
+    display: none;
+}
+
+section article {
+    width: 100%;
+}
+
+article p {
+    padding: 0% 7.5%;
+  	padding-bottom: 20px;
+}
+
+table {
+    display: none;
+}
+
+
+#texto_info {
+    text-align: center;
+    display: block;
+    color: black;
+}
+
+header#bienvenido nav {
+    display: flex;
+    justify-content: space-around; /* Ajusta el espacio entre los elementos */
+
+    width: 100vw;
+
+
+}
+#menu_superior a {
+    word-break:break-all;
+}
+
+nav#menu_superior {
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    
+}
+
+section#formulario article{
+    width:100vw;
+}
+
+#soundCloud_previous_works {
+	margin: 0% 0%;
+  	width: 100%;
+}
+
+section#trabajos_anteriores {
+  	min-height: calc(100vh - 80px);
+}
+
+
+/* Estilos para pantallas iguales o mayores a 768px (Tablet) */
+@media (min-width: 768px) {
+*{
+    font-size: 1.0em;
+}
+
+img#logo_header {
+    display: none;
+}
+
+
+img#logo_vertical {
+    display: inline-block;
+    margin-left: 15%;
+    height: 75px;
+}
+
+#fijar_arriba {
+
+    height: 80px;
+
+}
+
+main {
+    padding-top: 80px;
+}
+
+section article {
+    width: 75%;
+}
+
+table *, footer *{
+    font-size: 1.0em;
+}
+
+header {
+    
+    height: 80px;
+}
+
+section#trabajos_anteriores {
+  	min-height: calc(100vh - 80px);
+}
+
+
+
+form {
+    padding-top: 80px;
+    background-color: rgb(102, 203, 171);
+    min-height: 100vh;
+}
+
+nav#menu_superior {
+    margin: 0px;
+    margin-top: 10px;
+    margin-right: 10%;;
+}
+nav#menu_superior a {
+    text-align: center;
+    margin: 20px 5px;
+    width: auto;
+}
+
+}
+
+/* Estilos para pantallas iguales o mayores a 1024px (Escritorio) */
+@media (min-width: 1024px) {
+* {
+    /* Nos interesa que el tamaño de los contenedores incluya al contenedor completo (borde, margin y padding) */
+    box-sizing: border-box;
+    /* Nos interesa que el margen (exterior) de todos los elementos (a no ser que se especifique lo contrario) */
+    margin: 0px;
+
+}
+
+.article_trabajos_anteriores:nth-child(2) {
+    margin-bottom: auto; /* Empujar hacia abajo el segundo artículo */
+  }
+
+
+#botonForzarPlay {
+    padding: 0px;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 20vh;
+    opacity: 0%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 3;
+}
+
+body {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    font-family: arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/*Formatos aplicados al vídeo de fondo de la pestaña bienvenido*/
+
+#videoFondo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta el video cubriendo el área */
+    z-index: -1;
+}
+
+#videoFondo::-webkit-media-controls-start-playback-button,
+#videoFondo::-webkit-media-controls-play-button,
+#videoFondo::-webkit-media-controls-play-button,
+#videoFondo::-webkit-media-controls-start-playback-button,
+#videoFondo::-webkit-media-controls,
+#videoFondo::-moz-media-controls-play-button,
+#videoFondo::-ms-media-controls {
+    display: none !important;
+}
+
+a {
+    /* El enlace se muestra sin el estilo por defecto de los enlaces*/
+    text-decoration: none;
+    /* Color del texto blanco*/
+    color: #f08f3b;
+
+}
+
+a:active {
+    /* Color del texto blanco*/
+    color: white;
+}
+
+main {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+main#ppal {
+    padding-top: 0px;
+    width: 100%;
+    height: auto;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 15px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+section#biografia {
+    position: relative;
+    display: block;
+    background-color: #ec9243;
+
+}
+
+section#biografia a{
+    color: white;
+}
+
+section#metodo {
+    position: relative;
+    display: block;
+    background-color: #50ebe5;
+
+}
+
+
+section#biografia p,
+section#metodo p {
+    color: black;
+}
+
+p {
+    color: white;
+}
+
+section article {
+    margin: 0% auto;
+    width: 40%;
+    padding-top: 15px;
+}
+
+/* Estilo de los enlaces de idioma del index */
+
+#seleccionIdioma {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo común de ambos enlaces: español e ingles */
+.enlace_idioma a {
+    width: 20px;
+    display: inline-block;
+
+    /* Estilos relativos al texto de los enlaces */
+
+    /* El enlace se muestra sin el estilo por defecto de los enlaces*/
+    text-decoration: none;
+    /* Color del texto blanco*/
+    color: white;
+    /* El tamaño de los caracteres es de 30 píxeles*/
+    font-size: 30px;
+
+}
+
+.enlace_idioma:active,
+.enlace_idioma:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.enlace_idioma:active a {
+    color: #f08f3b;
+}
+
+/* Estilo común de los contenedores que tienen los enlaces de idioma */
+.enlace_idioma {
+    float: left;
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    font-size: 50px;
+
+}
+
+img#logo_header {
+    margin-left: 10%;
+    display: inline-block;
+    height: auto;
+    /* La altura se ajustará automáticamente para mantener la proporción original */
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100vw;
+    align-items: center;
+    z-index: 1;
+}
+
+form {
+    padding-top: 50px;
+    background-color: rgb(102, 203, 171);
+    min-height: 100vh;
+}
+
+
+header nav {
+    right: 0px;
+    margin-right: 10%;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    align-items: center;
+}
+
+#fijar_arriba {
+    background-color: black;
+    margin-top: 100vh;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    pointer-events: none;
+    /* Permite que los clics pasen a través de esta capa */
+}
+
+#menu_superior {
+    display: inline-block;
+}
+
+
+#menu_superior a {
+
+    margin: 15px;
+    display: inline-flex;
+}
+
+
+p {
+    padding-bottom: 20px;
+}
+
+p#first_p::first-letter {
+    font-size: 150%;
+    /* Cambia el tamaño de la primera letra del párrafo */
+    font-weight: bold;
+    /* Añade negrita a la primera letra */
+}
+
+.foto_perfil img {
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.foto_perfil figcaption {
+    display: inline-flex;
+    font-size: 0.8em;
+}
+
+.foto_perfil {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(100, 100, 100);
+}
+
+
+section.imagen {
+    position: relative;
+    display: block;
+
+}
+
+section.imagen img {
+    width: 100vw;
+    height: auto;
+}
+
+footer {
+    padding: 15px 0px;
+    background-color: rgb(100, 100, 100);
+
+}
+
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    /* Ajusta el espacio entre los elementos */
+
+}
+
+footer div {
+
+    width: 30%;
+    display: grid;
+    justify-content: center;
+
+}
+
+footer p {
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+}
+
+footer ul {
+    padding: 0px;
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    text-align: center;
+}
+
+footer li {
+    padding-top: 5px;
+}
+
+header#bienvenido {
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: 2;
+}
+
+section#trabajos_anteriores {
+    width: 100%;
+    min-height: calc(100vh - 50px); /* El 50px se resta al 100% del alto de la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+
+section#playlists {
+    background-color: #35353c;
+
+}
+
+section#playlists h2 {
+    color: white;
+
+}
+
+table {
+    margin: auto;
+}
+
+
+td {
+    text-align: center;
+    width: 33%;
+}
+
+img#logo_vertical {
+    display: none;
+}
+
+#texto_info {
+
+    display: none;
+}
+
+section#formulario {
+    background-color: rgb(102, 203, 171);
+    width: 100vw;
+}
+
+section#formulario article {
+    width: 400px;
+}
+
+section#formulario * {
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+.info,
+.msg_form,
+.preg_form {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 7.5px;
+    display: inline-block;
+}
+
+.preg_form label {
+    width: 40%;
+    display: inline-block;
+
+}
+
+.preg_form input {
+    width: 40ch;
+    display: grid;
+
+
+}
+
+img {
+    display: flex;
+    height: min-content;
+}
+
+.boton {
+    padding: 3% 12%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 7.5px;
+    display: inline-block;
+}
+
+.tratamiento {
+    min-width: 30px;
+    font-size: 12px;
+}
+
+.checkbox {
+    float: left;
+}
+
+.msg_form textarea {
+    resize: none;
+    width: 37ch;
+}
+}
