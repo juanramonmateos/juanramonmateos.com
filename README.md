@@ -91,20 +91,20 @@ Quedaría así:
 Los estilos estarán todos definidos en la carpeta /src/style. Tendremos el siguiente esquema:
 
 project-root/
-├── src/
-│   └── style/
-│       ├── base/
-│       │   ├── reset.css
-│       │   ├── variables.css
-│       │   └── typography.css
-│       ├── components/
-│       │   ├── titulos.css
-│       │   ├── .css
-│       │   └── .css
-│       └── pages/
-│           ├── menuPrincipal.css
-│           ├── perfilMusical.css
-│           └── perfilProfesional.css
+- src/
+  - style/
+    - base/
+      - reset.css
+      - variables.css
+      - typography.css
+    - components/
+      - titulos.css
+      - .css
+      - .css
+    - pages/
+      - menuPrincipal.css
+      - perfilMusical.css
+      - perfilProfesional.css
 
 En base/ tendremos los estilos base de la página:
 - reset.css: aseguramos consistencia en el estilo entre navegadores. Eliminamos o ajustamos los estilos predeterminados de los navegadores.
