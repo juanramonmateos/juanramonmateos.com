@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ethernal';
+    src: url('../../assets/fonts/Ethernal.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Conthrax';
+    src: url('../../assets/fonts/Conthrax-SemiBold.otf') format('truetype');
+  }
