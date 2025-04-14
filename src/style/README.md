@@ -14,9 +14,8 @@ project-root/
       - .css
       - .css
     - pages/
-      - menuPrincipal.css
-      - perfilMusical.css
-      - perfilProfesional.css
+      - index.css
+      - musicalProfile.css
 
 En base/ tendremos los estilos base de la página:
 - reset.css: aseguramos consistencia en el estilo entre navegadores. Eliminamos o ajustamos los estilos predeterminados de los navegadores.

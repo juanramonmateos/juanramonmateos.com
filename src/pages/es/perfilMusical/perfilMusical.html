@@ -11,12 +11,13 @@
     
         <!--INCLUSIÓN DE ESTILOS-->
         <!--Estilos para resetear las configuraciones de los navegadores-->
-        <link href="../../../style/base/reset.css" rel="stylesheet" type="text/css">
+        <link href="../../../style/pages/musicalProfile/desktop.css" rel="stylesheet" type="text/css">
         <!--Estilos para aplicar a toda la pagina. Mobile first-->
-        <link href="../../../style/pages/musicalProfile.css" rel="stylesheet" type="text/css">
+        <link href="../../../style/pages/musicalProfile/tablet.css" rel="stylesheet" type="text/css" media="(max-width:991px)">
         <!--Estilos para incluir las fuentes de texto en archivos .tiff-->
-        <link href="../../../style/base/typography.css" rel="stylesheet" type="text/css">
+        <link href="../../../style/pages/musicalProfile/phone.css" rel="stylesheet" type="text/css" media="(max-width:767px)">
     
+
       <!-- Imagen Favicon-->
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
     
@@ -33,7 +34,7 @@
     <button id="botonForzarPlay">Press if video is not playing</button>
     
       <header id="bienvenido">
-        <a href="../../index.html">
+        <a href="../../../index.html">
           <img id="logo_header" src="../../../assets/images/logo_header.png" alt="Juan Ramón Mateos">
           <img id="logo_vertical" src="../../../assets/images/logo_rectangular.png" alt="Juan Ramón Mateos">
         </a>
@@ -227,4 +228,5 @@
       videoFondo.play(); // Forzar la reproducción al hacer clic en el botón
     });
   </script>
+  <script src="../../../js/components/ocultarConScroll.js"></script>
 </html>
