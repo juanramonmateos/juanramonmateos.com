@@ -13,10 +13,22 @@
         <link href="./style/pages/index.css" rel="stylesheet" type="text/css">
         <!--Estilos para incluir las fuentes de texto en archivos .tiff-->
         <link href="./style/base/typography.css" rel="stylesheet" type="text/css">
+
+
+        <!--INCLUSIÓN DE COMPONENTES DE ESTILO-->
+        <link href="./style/components/noScrollbar.css" rel="stylesheet" type="text/css">
+
+        <link href="./style/components/index/fondoGrano.css" rel="stylesheet" type="text/css">
+
+        <link href="./style/components/index/tituloH1.css" rel="stylesheet" type="text/css">
+
+        <link href="./style/components/index/imagenes.css" rel="stylesheet" type="text/css">
+
+
     </head>  
     <body>
         <header>
-            <h1>JUAN RAMÓN MATEOS</h1>
+            <h1 id="tituloPrincipal">JUAN RAMÓN MATEOS</h1>
             <nav>
                 <a href="https://www.linkedin.com/in/juanramonmateos/" target="_Self">Perfil profesional</a>
                 <a href="./pages/es/perfilMusical/perfilMusical.html" target="_Self">Perfil artístico</a>
@@ -37,12 +49,13 @@
             <nav>
                 <ul>  
                     <li>
-                        <a href="https://github.com/juanramonmateos/personal-website" target="_blank"><img alt = "GitHub del proyecto"></a>
+                        <a href="https://github.com/juanramonmateos/personal-website" target="_blank"><img style="display: inline;" id="github" src="./assets/images/github.svg" alt= "GitHub del proyecto">&nbsp;GitHub del Proyecto</a>
                     </li>
                 </ul>
             </nav>
             <p>Sitio web codificado por Juan Ramón Mateos</p>
         </footer>
+        <script src="./js/components/primeraLetraGrande.js"></script>
         <script src="./js/components/fondograno.js"></script>
     </body>
 </html>

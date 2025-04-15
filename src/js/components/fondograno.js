@@ -52,7 +52,7 @@
     function animate() {
         const now = performance.now();
         const t = ((now - startTime) % 5000) / 5000;
-        const alpha = 0.10 + 0.10 * Math.sin(t * 2 * Math.PI); // más contraste
+        const alpha = 0.25 + 0.10 * Math.sin(t * 2 * Math.PI); // más contraste
       
         drawPattern(mouseX, mouseY, alpha);
         requestAnimationFrame(animate);
