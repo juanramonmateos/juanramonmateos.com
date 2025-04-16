@@ -29,7 +29,7 @@
     <body>
     <img id="videoFondo" src="../../../assets/gifs/fondo.gif" alt="Video Fondo">
       <header id="bienvenido">
-        <a href="../../../index.html">
+        <a href="../index-es.html">
           <img id="logo_header" src="../../../assets/images/logo_header.png" alt="Juan Ramón Mateos">
           <img id="logo_vertical" src="../../../assets/images/logo_rectangular.png" alt="Juan Ramón Mateos">
         </a>
@@ -74,6 +74,9 @@
               ha llegado a ser
               premiado en más de una ocasión como en el festival de cine Daganzo Trascámara por su obra colaborativa <a
                 href="https://soundcloud.com/juanramonmateos/sets/flores-bso?si=d46586a9e95f400c9b6d6216eae37f24&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Flores</a>.
+            </p>
+            <p>
+              Entre estos reconocimientos, en 2025 Juan Ramón también fue premiado con el primer puesto del ambicioso concurso de composición de <a href="http://hacking.music">Hack The Music</a> en <a href="https://www.rootedcon.com/inicio/">RootedCON</a> en su segunda edición, con su tema Root Privileges
             </p>
             <p>
               Dentro del mundo musical también ha tenido la oportunidad de participar como responsable de sonido en cuatro
@@ -207,21 +210,5 @@
         </nav>
       </footer>
     </body>
-      <script>
-    const videoFondo = document.getElementById('videoFondo');
-    const botonForzarPlay = document.getElementById('botonForzarPlay');
-
-    videoFondo.addEventListener('play', function () {
-      botonForzarPlay.style.display = 'none'; // Oculta el botón cuando el video se está reproduciendo
-    });
-
-    videoFondo.addEventListener('pause', function () {
-      botonForzarPlay.style.display = 'block'; // Muestra el botón cuando el video está pausado
-    });
-
-    botonForzarPlay.addEventListener('click', function () {
-      videoFondo.play(); // Forzar la reproducción al hacer clic en el botón
-    });
-  </script>
   <script src="../../../js/components/ocultarConScroll.js"></script>
 </html>

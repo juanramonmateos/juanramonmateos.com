@@ -8,30 +8,12 @@ html, body {
 
 header {
   position: fixed;
+  width: 100vw;
 }
 
 
-header > nav {
-  position: fixed;
-  transform: translate(-50%, -50%); /* Ajusta el centro del bloque al punto indicado */
-  left: 50vw; /* Posición horizontal deseada */
-  top: 80vh; /* Posición vertical deseada */
-  display: flex; /* Flexbox para manejar la disposición */
-  flex-wrap: wrap; /* Permite que los enlaces se envuelvan en una nueva línea si no caben */
-  justify-content: center; /* Centra los enlaces horizontalmente */
-  align-content: space-between; /* Ajusta la separación vertical entre líneas si se envuelven */
-  text-align: center;
-}
 
-header > nav > a {
-  font-size: 4vh;
-  line-height: 1; /* Aumenta el espacio entre líneas al 1.5 del tamaño de la fuente */
-  display: inline-block;
-  margin: 2vh 5vw;
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 1px cyan, -1px -1px 1px orange;
-}
+
 
 main {
   height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
@@ -59,6 +41,7 @@ footer {
   top: 100vh;
   color: gray;
   width: 100vw;
+  padding: 0px 0px 10px 0px;
 }
 
 footer > * {
@@ -83,9 +66,6 @@ footer > * {
     grid-template-columns: 2fr 3fr 2fr; /* Tres columnas de proporciones diferentes */
   }
 
-  header > nav > a {
-    font-size: 2vw;    
-  }
 }
 
 @media screen and (min-width: 769px) {

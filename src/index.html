@@ -2,9 +2,12 @@
 <html lang="es-ES">
     <head>
         <meta charset="UTF-8">
-        <title> Juan Ramón Mateos | Portada </title>
+        <title> Juan Ramón Mateos | Home </title>
         <link rel="alternate" hreflang="en" href="https://juanramonmateos.com/en/">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Imagen Favicon-->
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
         <!--INCLUSIÓN DE ESTILOS-->
         <!--Estilos para resetear las configuraciones de los navegadores-->
@@ -16,22 +19,29 @@
 
 
         <!--INCLUSIÓN DE COMPONENTES DE ESTILO-->
+
         <link href="./style/components/noScrollbar.css" rel="stylesheet" type="text/css">
 
         <link href="./style/components/index/fondoGrano.css" rel="stylesheet" type="text/css">
 
-        <link href="./style/components/index/tituloH1.css" rel="stylesheet" type="text/css">
+        <link href="./style/components/index/titulos.css" rel="stylesheet" type="text/css">
 
         <link href="./style/components/index/imagenes.css" rel="stylesheet" type="text/css">
+        
+        <link href="./style/components/index/enlacesNav.css" rel="stylesheet" type="text/css">
 
+        <link href="./style/components/index/listaFooter.css" rel="stylesheet" type="text/css">
+
+        <link href="./style/components/index/noMostrarMovil.css" rel="stylesheet" type="text/css">
 
     </head>  
     <body>
         <header>
             <h1 id="tituloPrincipal">JUAN RAMÓN MATEOS</h1>
+            <h2>IT & Music</h2>
             <nav>
-                <a href="https://www.linkedin.com/in/juanramonmateos/" target="_Self">Perfil profesional</a>
-                <a href="./pages/es/perfilMusical/perfilMusical.html" target="_Self">Perfil artístico</a>
+                <a href="https://www.linkedin.com/in/juanramonmateos/" target="_Self">Professional profile</a>
+                <a href="./pages/en/musicalProfile/artistic.html" target="_Self">Artistic profile</a>
             </nav>
         </header>
         <main>
@@ -47,13 +57,16 @@
         </main>
         <footer>
             <nav>
-                <ul>  
+                <ul id="listaFooter">  
                     <li>
-                        <a href="https://github.com/juanramonmateos/personal-website" target="_blank"><img style="display: inline;" id="github" src="./assets/images/github.svg" alt= "GitHub del proyecto">&nbsp;GitHub del Proyecto</a>
+                        <a href="https://github.com/juanramonmateos/personal-website" target="_blank"><img style="display: inline;" class="icon" src="./assets/images/github.png" alt= "GitHub del proyecto"><span class="noMostrarMovil">&nbsp;Project GitHub</span></a>
+                    </li>
+                    <li>
+                        <a href="./pages/es/index-es.html" target="_self"><img style="display: inline;" class="icon" src="./assets/images/es.png" alt= "GitHub del proyecto"><span class="noMostrarMovil">&nbsp;Cambiar a español</span></a>    
                     </li>
                 </ul>
             </nav>
-            <p>Sitio web codificado por Juan Ramón Mateos</p>
+            <p class="noMostrarMovil">Website coded by Juan Ramón Mateos</p>
         </footer>
         <script src="./js/components/primeraLetraGrande.js"></script>
         <script src="./js/components/fondograno.js"></script>

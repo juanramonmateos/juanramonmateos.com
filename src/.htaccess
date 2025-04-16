@@ -1,16 +1,33 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteBase /
 
-  # Redirección de HTTP a HTTPS
+  # 🔒 Forzar HTTPS
   RewriteCond %{HTTPS} off
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Redirección si la dirección no existe
+  # ✅ Redirección externa: si acceden a rutas largas, redirigir a cortas
+  RewriteCond %{THE_REQUEST} /pages/en/musicalProfile/music\.html [NC]
+  RewriteRule ^pages/en/musicalProfile/music\.html$ /music [R=301,L]
+
+  RewriteCond %{THE_REQUEST} /pages/en/musicalProfile/artistic\.html [NC]
+  RewriteRule ^pages/en/musicalProfile/artistic\.html$ /artistic [R=301,L]
+
+  RewriteCond %{THE_REQUEST} /pages/es/perfilMusical/musica\.html [NC]
+  RewriteRule ^pages/es/perfilMusical/musica\.html$ /musica [R=301,L]
+
+  RewriteCond %{THE_REQUEST} /pages/es/perfilMusical/artistico\.html [NC]
+  RewriteRule ^pages/es/perfilMusical/artistico\.html$ /artistico [R=301,L]
+
+  RewriteCond %{THE_REQUEST} /pages/es/index-es\.html [NC]
+  RewriteRule ^pages/es/index-es\.html$ /es [R=301,L]
+
+  # ✅ Reescritura interna: servir archivos .html desde URLs limpias
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([a-zA-Z0-9/_-]+)$ $1.html [L]
+
+  # ❌ Mostrar /error.html si no existe archivo ni directorio
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^([^/]+)$ /error.html [L]
-
-  # Reescritura para URLs sin la extensión .html
-  RewriteCond %{REQUEST_FILENAME}.html -f
-  RewriteRule ^([^/]+)$ $1.html [L]
 </IfModule>

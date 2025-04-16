@@ -1,0 +1,41 @@
+h1 {
+    font-size: 8vw;
+    color: white;
+    text-shadow: 1.2px 1.2px 1px cyan, -1.2px -1.2px 1px orange;
+    
+  }
+  
+  #tituloPrincipal span.primera-letra {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 5vw;
+    color: white;
+    text-shadow: 1px 1px 1px cyan, -1px -1px 1px orange;
+  }
+  
+@media screen and (orientation: landscape) { 
+    h1 {
+      font-size: 5vw;
+      display: inline-block;
+    }
+    h2 {
+      font-size: 3vw;
+      display: inline-block;
+      margin: 0px 0px 0px 8px;
+    }
+  }
+  
+
+  @media screen and (min-width: 769px) and (orientation: landscape) {
+    h1 {
+      font-size: 3.8vw;
+    }
+  }
+  @media screen and (min-width: 1025px) and (orientation: landscape) {
+
+  }
+  @media screen and (min-width: 1441px) and (orientation: landscape) {
+
+  }

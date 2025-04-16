@@ -1,0 +1,52 @@
+header > nav {
+  position: fixed;
+  transform: translate(-50%, -50%); /* Ajusta el centro del bloque al punto indicado */
+  left: 50vw; /* Posición horizontal deseada */
+  top: 80vh; /* Posición vertical deseada */
+  display: flex; /* Flexbox para manejar la disposición */
+  flex-direction: column;
+  justify-content: center; /* Centra los elementos internos horizontalmente en el contenedor flex*/
+  align-content: space-between; /* Ajusta la separación vertical entre líneas si se envuelven */
+  text-align: center;
+  width: 100vw;
+  align-items: center;
+}
+
+header > nav > a {
+  font-size: 3.5vh;
+  line-height: 1; /* Aumenta el espacio entre líneas al 1.5 del tamaño de la fuente */
+  display: block;
+  margin: 2vh 2vw;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px cyan, -1px -1px 1px orange;
+}
+
+@media screen and (orientation: landscape) {
+    header > nav {
+        flex-direction: row;
+        
+      }
+    header > nav > a {
+        display: inline-block;
+        font-size: 2.8vw;
+        margin: 2vh 0.2vw;
+        padding: 0vh 10vh;
+    }
+}
+
+  @media screen and (min-width: 769px) and (orientation: landscape) {
+    header > nav > a {
+        font-size: 2.2vw;
+        padding: 0vh 10vh;
+      }
+  }
+  @media screen and (min-width: 1025px) and (orientation: landscape) {
+    header > nav > a {
+        font-size: 1.7vw;
+        padding: 0vh 20vh;
+      }
+  }
+  @media screen and (min-width: 1441px) and (orientation: landscape) {
+
+  }
